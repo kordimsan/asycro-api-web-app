@@ -13,9 +13,10 @@ class Worker:
     
     def add_task(self, num: int, timeout: int):
         self._queue.append({
+            'id': (self._queue[-1]['id'] if self._queue else 0) + 1,
+            'addtime': datetime.now(),
             'num': num,
             'timeout': timeout,
-            'addtime': datetime.now()
         })
     
     def del_task(self, _task):
