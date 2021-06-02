@@ -1,3 +1,3 @@
-# asycro-api-web-app
+# async-api-web-app
 
 Тестовое задание Elastoo: python backend 
